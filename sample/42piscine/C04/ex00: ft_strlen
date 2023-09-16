@@ -5,9 +5,10 @@ int  ft_strlen(char *str)
 { 
   int  i;
   i = 0;
-  while (str[i] != "\0")
+  while (str[i] != '\0')
   {
       *str++;
+      i++;
   }
   return  i;
 }
@@ -15,6 +16,6 @@ int  ft_strlen(char *str)
 int  main()
 {
   int  len;
-  len = ft_strlen("hi barbie!");
+  len = ft_strlen("I'm just Ken!");
   printf("%d", len);
 }
